@@ -1,0 +1,165 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f8ecec;
+  font-family: 'Tahoma';
+}
+
+.titulo {
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+}
+
+.cls_flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.direccion {
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+label {
+  display: block;
+  font-size: 1.2rem;
+  padding: 1%;
+  margin-left: 5%;
+  text-align: center;
+}
+
+textarea {
+  margin: 1%;
+  padding: 15px;
+  margin-left: 40px;
+  width: 90%;
+  border-radius: 18px;
+  border: 2px solid #eeaeeb;
+  font-size: 1rem;
+  resize: none;
+}
+
+textarea:focus {
+  border-color: #66afe9;
+  outline: none;
+  box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+.boton {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.btn_gral1,
+.btn_gral2 {
+  border: 3px solid black;
+  border-radius: 5%;
+  width: 180px;
+  height: 60px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn_gral1 {
+  background-color: #2065e5;
+  margin-right: 35px;
+  color: white;
+  
+}
+
+.btn_gral2 {
+  background-color: #e0e2e4;
+}
+
+.presentacion__imagen {
+  max-width: 100%;
+  height: auto;
+  margin-right: 102px;
+}
+
+.parafo {
+  text-align: center;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.clshidden {
+  display: none;
+}
+
+.copiar_texto,
+.borrar_texto {
+  width: 150px;
+  height: 45px;
+  margin-top: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.footer {
+  background-color: #ffdafe;
+  padding: 15px;
+  width: 100%;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .cls_flex {
+    flex-direction: column;
+  }
+
+  .boton {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn_gral1,
+  .btn_gral2 {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  textarea {
+    width: 100%;
+  }
+
+  .copiar_texto,
+  .borrar_texto {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  label {
+    margin-left: 0;
+  }
+
+  .titulo {
+    font-size: 1.5rem;
+  }
+
+  .btn_gral1,
+  .btn_gral2 {
+    height: 50px;
+    font-size: 0.9rem;
+  }
+
+  .presentacion__imagen{
+    margin-right: 50px;
+  }
+
+  .copiar_texto,
+  .borrar_texto {
+    height: 40px;
+    font-size: 0.9rem;
+  }
+}
